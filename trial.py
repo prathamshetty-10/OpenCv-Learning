@@ -24,6 +24,7 @@ cv2.imshow("Profile pic",img2)
 cv2.waitKey(0)
 cv2.destroyAllWindows()"""
 
+"""
 #cropping image
 height,width=img.shape[0],img.shape[1]#getting height and width
 img=img[int(height/2):-int(height/3),50:-50]
@@ -35,4 +36,13 @@ img=img[int(height/2):-int(height/3),50:-50]
 cv2.imshow("Profile pic",img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+"""
+"""
+#Rotate Image
 
+img=cv2.rotate(img,cv2.ROTATE_180)#rotating upside down
+
+cv2.imshow("Profile pic",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+"""
