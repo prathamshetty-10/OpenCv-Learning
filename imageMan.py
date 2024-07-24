@@ -98,10 +98,12 @@ cv2.destroyAllWindows()
 
 """
 #text
+"""
 img=cv2.putText(img,"Hello Pratham",org=(0,400),thickness=2,fontFace=cv2.FONT_HERSHEY_COMPLEX,fontScale=1,color=(0,0,0))
 #400 400 is bottom left corner
 cv2.imshow("Profile pic",img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+"""
 
 
