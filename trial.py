@@ -46,3 +46,19 @@ cv2.imshow("Profile pic",img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 """
+
+#Drawing shapes on image
+"""
+#Border
+img=cv2.copyMakeBorder(img,20,20,20,20,borderType=cv2.BORDER_CONSTANT,value=(100,0,0))#20px border on TLBR and value is basically gbr code
+cv2.imshow("Profile pic",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+"""
+##line
+img=cv2.line(img,(50,50),(500,50),color=(0,200,0),thickness=20)
+cv2.imshow("Profile pic",img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+
