@@ -1,8 +1,13 @@
 import cv2
 import numpy as np
+import os
 
 #img is a numpy array it has col and each col is a array with height and width each element is pixel value
-img=cv2.imread("./pp.JPG",cv2.IMREAD_GRAYSCALE)
+img_path="opencv\pp.JPG"
+if not os.path.exists(img_path):
+    print("File not found:", "/pp.JPG")
+    exit()
+img=cv2.imread(img_path,cv2.IMREAD_GRAYSCALE)
 #cv2.IMREAD_COLOR Just displays normal picture
 #cv2.IMREAD_GRAYSCALE makes picture gray
 
@@ -10,9 +15,9 @@ img=cv2.imread("./pp.JPG",cv2.IMREAD_GRAYSCALE)
 # print(img.shape)#gives number of pixel rows and colums
 
 
-# cv2.imshow("Profile pic",img)
-# cv2.waitKey(0)#window closes when u hit a key
-# cv2.destroyAllWindows()#once window close destroy all windows
+cv2.imshow("Profile pic",img)
+cv2.waitKey(0)#window closes when u hit a key
+cv2.destroyAllWindows()#once window close destroy all windows
 
 #storing gray image to the file 
 # cv2.imwrite("graypic.JPG",img)
